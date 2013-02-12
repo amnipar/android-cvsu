@@ -1,0 +1,14 @@
+android-cvsu v.0.1.0
+
+Author: Matti J. Eskelinen <matti.j.eskelinen@gmail.com>
+
+This is the cvsu demo application for Android. It requires installing also
+OpenCV Manager on the device, and links dynamically to the opencv library. It
+utilizes opencv for intercepting camera frames and analyzing them before drawing
+on screen.
+
+Compiling this app will require Android NDK and OpenCV SDK for Android. Detailed
+instructions will follow at a later time.
+
+Compiling requires also cloning or symlinking the cvsu repository to
+subdirectory jni/cvsu.
