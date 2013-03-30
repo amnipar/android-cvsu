@@ -73,7 +73,7 @@ Java_info_amnipar_cvsu_CVSUActivity_DrawTrees(JNIEnv*, jobject, jlong addrGray, 
   /*__android_log_print(ANDROID_LOG_INFO,"libcvsu","created forest");*/
   CHECK(pixel_image_create_from_data(&rgb_image, mRgb->data, p_U8, RGB, mRgb->cols, mRgb->rows, mRgb->step[1], mRgb->step[0]));
   /*__android_log_print(ANDROID_LOG_INFO,"libcvsu","created target image");*/
-  CHECK(quad_forest_segment_with_boundaries(&forest));
+  CHECK(quad_forest_segment_with_boundaries(&forest, 3, 5, 0.5, 2, 2));
   /*CHECK(quad_forest_segment_with_overlap(&forest, 2.5, 0.6, 0.5));*/
   CHECK(quad_forest_draw_trees(&forest, &rgb_image, TRUE));
   
